@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contato | MCSP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+
+    <div class="top">
+        <div class="wrap">
+            <span>Entrada gratuita · Terça a domingo</span>
+            <span>Acessibilidade: audiodescrição disponível</span>
+        </div>
+    </div>
+
+    <header class="site">s
+        <div class="wrap bar">
+
+            <a class="logo" href="index.html">
+                logo
+            </a>
+
+            <input type="checkbox" id="mt">
+            <label class="burger" for="mt" aria-label="Abrir menu">☰</label>
+
+            <form class="search" role="search" onsubmit="return false">
+                <input
+                    type="search"
+                    placeholder="Buscar"
+                    aria-label="Buscar no site"
+                >
+                <button aria-label="Buscar">🔍</button>
+            </form>
+
+            <nav aria-label="Principal">
+                <ul>
+
+                    <li>
+                        <a href="unidades.html">Visite</a>
+                        <ul>
+                            <li>
+                                <a href="unidades.html">Unidades</a>
+                            </li>
+                            <li>
+                                <a href="unidades.html#horarios">Horários e como chegar</a>
+                            </li>
+                            <li>
+                                <a href="contatos.html#agendar">Agendamento de grupos</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="index.html#cartaz">Programação</a>
+                        <ul>
+                            <li>
+                                <a href="index.html#cartaz">Em cartaz</a>
+                            </li>
+                            <li>
+                                <a href="index.html#programacao">Cursos e oficinas</a>
+                            </li>
+                            <li>
+                                <a href="#">Exposições encerradas</a>
+                            </li>
+                            <li>
+                                <a href="#">Tour virtual</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Acervo</a>
+                        <ul>
+                            <li>
+                                <a href="#">Nossos acervos</a>
+                            </li>
+                            <li>
+                                <a href="#">Consultas e empréstimos</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Educação</a>
+                        <ul>
+                            <li>
+                                <a href="#">Para escolas e professores</a>
+                            </li>
+                            <li>
+                                <a href="#">Para guias de turismo</a>
+                            </li>
+                            <li>
+                                <a href="#">Acessibilidade e inclusão</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Publicações</a>
+                        <ul>
+                            <li>
+                                <a href="#">Livros e revistas</a>
+                            </li>
+                            <li>
+                                <a href="#">Materiais educativos</a>
+                            </li>
+                            <li>
+                                <a href="#">Debates e conversas</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Sobre</a>
+                        <ul>
+                            <li>
+                                <a href="#">Quem somos</a>
+                            </li>
+                            <li>
+                                <a href="#">Missão, visão e valores</a>
+                            </li>
+                            <li>
+                                <a href="#">Editais e chamadas</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="contatos.html" aria-current="page">Contato</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main">
+
+        <div class="wrap page">
+
+            <nav class="crumbs" aria-label="Você está em">
+                <a href="index.html">Início</a> › Contato
+            </nav>
+
+            <h1>Contato</h1>
+
+            <p class="lead">
+                Fale com a equipe, agende uma visita em grupo ou tire dúvidas frequentes.
+            </p>
+
+            <div class="two">
+
+                <div class="box" id="agendar">
+
+                    <h2>Envie uma mensagem</h2>
+
+                    <form onsubmit="return false">
+
+                        <label for="n">Nome</label>
+                        <input id="n">
+
+                        <label for="e">E-mail</label>
+                        <input id="e" type="email">
+
+                        <label for="a">Assunto</label>
+                        <select id="a">
+                            <option>Dúvida geral</option>
+                            <option>Agendamento de grupo</option>
+                            <option>Consulta ao acervo</option>
+                            <option>Imprensa</option>
+                        </select>
+
+                        <label for="m">Mensagem</label>
+                        <textarea id="m" rows="4"></textarea>
+
+                        <button class="go">Enviar</button>
+
+                    </form>
+
+                </div>
+
+                <div>
+
+                    <div class="box">
+
+                        <h2>Como falar conosco</h2>
+
+                        <p>
+                            <b>Endereço</b><br>
+                            Rua Roberto Simonsen, 136 – Sé<br>
+                            CEP 01017-020
+                        </p>
+
+                        <p style="margin-top:10px">
+                            <b>E-mail</b><br>
+                            <a href="mailto:museudacidade@prefeitura.sp.gov.br">
+                                museudacidade@prefeitura.sp.gov.br
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <div class="box" style="margin-top:20px">
+
+                        <h2>Perguntas frequentes</h2>
+
+                        <details>
+                            <summary>A entrada é gratuita?</summary>
+                            <p>Sim. Confirme por unidade.</p>
+                        </details>
+
+                        <details>
+                            <summary>Preciso agendar?</summary>
+                            <p>Grupos e escolas precisam de agendamento prévio.</p>
+                        </details>
+
+                        <details>
+                            <summary>Há audiodescrição?</summary>
+                            <p>Sim, consulte a página de acessibilidade.</p>
+                        </details>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="wrap">
+
+            <div>
+                <h3>Museu da Cidade de São Paulo</h3>
+
+                Rua Roberto Simonsen, 136 – Sé<br>
+                CEP 01017-020<br>
+
+                <a href="mailto:museudacidade@prefeitura.sp.gov.br">
+                    museudacidade@prefeitura.sp.gov.br
+                </a>
+            </div>
+
+            <div>
+                <h3>Visite</h3>
+
+                <a href="unidades.html">Unidades</a>
+                <a href="unidades.html#horarios">Horários</a>
+                <a href="contatos.html#agendar">Agendar grupo</a>
+            </div>
+
+            <div>
+                <h3>Siga</h3>
+
+                <a href="https://www.instagram.com/museudacidade/">
+                    Instagram
+                </a>
+
+                <a href="contatos.html">Fale conosco</a>
+            </div>
+
+        </div>
+
+        <div class="wrap" style="display:block;margin-top:24px">
+            © 2026 Museu da Cidade de São Paulo. Protótipo acadêmico.
+        </div>
+
+    </footer>
+
+</body>
+</html>
