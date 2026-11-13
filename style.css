@@ -691,3 +691,30 @@ footer a {
         flex-wrap: wrap;
     }
 }
+
+/* largura da barra */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* fundo da barra */
+::-webkit-scrollbar-track {
+    background: var(--sand);
+}
+
+/* parte móvel da barra */
+::-webkit-scrollbar-thumb {
+    background: var(--brand);
+    border-radius: 10px;
+    border: 2px solid var(--sand);
+}
+
+/* efeito ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #6b3925;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--brand) var(--sand);
+}
