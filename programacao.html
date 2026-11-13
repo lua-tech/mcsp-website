@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Programação | MCSP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-extra.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet">
+</head>
+
+<body>
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+
+    <div class="top">
+        <div class="wrap">
+            <span>Entrada gratuita · Terça a domingo</span>
+            <span>Acessibilidade: Audiodescrição disponível</span>
+        </div>
+    </div>
+
+    <header class="site">
+        <div class="wrap bar">
+            <a class="logo" href="index.html">
+                <img src="img/logo2.png" alt="Museu da Cidade de São Paulo, página inicial">
+            </a>
+
+            <input type="checkbox" id="mt">
+            <label class="burger" for="mt" aria-label="Abrir menu">☰</label>
+
+            <form class="search" role="search" onsubmit="return false">
+                <input type="search" placeholder="Buscar" aria-label="Buscar no site">
+                <button aria-label="Buscar">
+                    <span class="material-symbols-outlined" aria-hidden="true">search</span>
+                </button>
+            </form>
+
+            <nav aria-label="Principal">
+                <ul>
+                    <li>
+                        <a href="unidades.html">Visite</a>
+                        <ul>
+                            <li><a href="unidades.html">Unidades</a></li>
+                            <li><a href="unidades.html#horarios">Horários e como chegar</a></li>
+                            <li><a href="contatos.html#agendar">Agendamento de grupos</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="programacao.html" aria-current="page">Programação</a>
+                        <ul>
+                            <li><a href="programacao.html#cartaz">Em cartaz</a></li>
+                            <li><a href="programacao.html#cursos">Cursos e oficinas</a></li>
+                            <li><a href="programacao.html#encerradas">Exposições encerradas</a></li>
+                            <li><a href="programacao.html#tour">Tour virtual</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="acervo.html">Acervo</a>
+                        <ul>
+                            <li><a href="acervo.html#nossos">Nossos acervos</a></li>
+                            <li><a href="acervo.html#consultas">Consultas e empréstimos</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="educacao.html">Educação</a>
+                        <ul>
+                            <li><a href="educacao.html#escolas">Para escolas e professores</a></li>
+                            <li><a href="educacao.html#guias">Para guias de turismo</a></li>
+                            <li><a href="educacao.html#acessibilidade">Acessibilidade e inclusão</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="publicacoes.html">Publicações</a>
+                        <ul>
+                            <li><a href="publicacoes.html#livros">Livros e revistas</a></li>
+                            <li><a href="publicacoes.html#materiais">Materiais educativos</a></li>
+                            <li><a href="publicacoes.html#debates">Debates e conversas</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                        <ul>
+                            <li><a href="sobre.html#quem">Quem somos</a></li>
+                            <li><a href="sobre.html#missao">Missão, visão e valores</a></li>
+                            <li><a href="sobre.html#editais">Editais e chamadas</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="contatos.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="wrap page">
+            <nav class="crumbs" aria-label="Você está em">
+                <a href="index.html">Início</a> › Programação
+            </nav>
+
+            <h1>Programação</h1>
+            <p class="lead">Exposições em cartaz, cursos, oficinas e vídeos do museu.</p>
+
+            <div class="side">
+                <nav class="toc" aria-label="Nesta página">
+                    <a href="#cartaz">Em cartaz</a>
+                    <a href="#cursos">Cursos e oficinas</a>
+                    <a href="#encerradas">Encerradas</a>
+                    <a href="#tour">Tour virtual</a>
+                    <a href="#politica">Política</a>
+                </nav>
+
+                <div>
+                    <section class="blk" id="cartaz">
+                        <h2>Em cartaz</h2>
+
+                        <div class="grid">
+                            <a class="card" href="#">
+                                <div class="ph">
+                                    <img src="img/monumento-independencia.jpg" alt="Exposição Representações da Nação">
+                                </div>
+                                <div class="b">
+                                    <span class="tag">Exposição</span>
+                                    <h3>Representações da Nação: O Monumento à Independência e a Cripta Imperial</h3>
+                                    <p>Curadoria de Marly Rodrigues. Trajetória do monumento, simbologia, concurso,
+                                        Avenida D. Pedro I e estudos técnicos da cripta.</p>
+                                </div>
+                            </a>
+
+                            <a class="card" href="#">
+                                <div class="ph">
+                                    <img src="img/marquesa-santos.jpg" alt="A São Paulo da Marquesa de Santos">
+                                </div>
+                                <div class="b">
+                                    <span class="tag">Exposição</span>
+                                    <h3>A São Paulo da Marquesa de Santos</h3>
+                                    <p>Em cartaz no Solar da Marquesa.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="blk" id="cursos">
+                        <h2>Cursos e oficinas</h2>
+
+                        <div class="grid">
+                            <a class="card" href="#">
+                        <div class="ph">
+                            <img src="img/cursos-acoes.png" alt="Cursos Outubro e Novembro">
+                        </div>
+
+                                <div class="b">
+                                    <span class="tag">Gratuito</span>
+                                    <h3>Ações Formativas · Outubro e Novembro</h3>
+                                    <p>Programação gratuita do museu. Inscreva-se.</p>
+                                </div>
+                            </a>
+
+                            <a class="card" href="#">
+                                <div class="ph">
+                                    <img src="img/cursos.jpg" alt="Cursos 2026">
+                                </div>
+                                <div class="b">
+                                    <span class="tag">Gratuito</span>
+                                    <h3>Cursos · 2026</h3>
+                                    <p>Lista de cursos nas diversas unidades.</p>
+                                </div>
+                            </a>
+
+                            <a class="card" href="#">
+                                <div class="ph">
+                                    <img src="img/historia-oral.png" alt="História Oral em Tela">
+                                </div>
+                                <div class="b">
+                                    <span class="tag">Mostra</span>
+                                    <h3>História Oral em Tela</h3>
+                                    <p>Documentários com depoimentos das Pastoras do Rosário, Abílio Ferreira e
+                                        outros.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="blk" id="encerradas">
+                        <h2>Exposições encerradas</h2>
+                        <p>Consulte o arquivo de exposições anteriores do museu.</p>
+
+                        <ul class="list">
+                            <li><a href="#">Exposições encerradas (lista por ano)</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="blk" id="tour">
+                        <h2>Tour virtual e vídeos</h2>
+                        <p>Visite as exposições à distância.</p>
+
+                        <ul class="list">
+                            <li><a href="#">Tour virtual</a></li>
+                            <li><a href="#">Vídeos do museu</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="blk" id="politica">
+                        <h2>Política de exposições</h2>
+
+                        <details>
+                            <summary>Ler a política de exposições</summary>
+                            <p style="padding-top:8px">
+                                Documento institucional que orienta a realização de exposições no MCSP.
+                            </p>
+                        </details>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div>
+                <h3>Museu da Cidade de São Paulo</h3>
+                Rua Roberto Simonsen, 136 - Sé<br>
+                CEP 01017-020<br>
+                <a href="mailto:museudacidade@prefeitura.sp.gov.br">
+                    museudacidade@prefeitura.sp.gov.br
+                </a>
+            </div>
+
+            <div>
+                <h3>Visite</h3>
+                <a href="unidades.html">Unidades</a>
+                <a href="unidades.html#horarios">Horários</a>
+                <a href="contatos.html#agendar">Agendar grupo</a>
+            </div>
+
+            <div>
+                <h3>Siga</h3>
+                <a href="https://www.instagram.com/museudacidade/">Instagram</a>
+                <a href="contatos.html">Fale conosco</a>
+            </div>
+        </div>
+
+        <div class="wrap" style="display:block;margin-top:24px">
+            © 2026 - Museu da Cidade de São Paulo. Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+
+</html>

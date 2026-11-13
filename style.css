@@ -580,3 +580,114 @@ footer a {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/* Acrescente ao style.css (ou mantenha como arquivo separado) */
+
+.side {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+    padding-bottom: 56px;
+    align-items: start;
+}
+
+.toc {
+    position: sticky;
+    top: 92px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 15px;
+}
+
+.toc a {
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+}
+
+.toc a:hover {
+    background: var(--sand);
+    border-color: var(--brand);
+}
+
+.blk {
+    padding: 0 0 40px;
+    scroll-margin-top: 92px;
+}
+
+.blk > h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.blk p {
+    max-width: 68ch;
+    margin-bottom: 12px;
+}
+
+.ph.g {
+    background: linear-gradient(135deg, var(--c1), var(--c2));
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    border-top: 1px solid var(--line);
+}
+
+.list a {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 4px;
+    text-decoration: none;
+}
+
+.list a:hover {
+    color: var(--brand);
+}
+
+.list a::after {
+    content: "→";
+    color: var(--brand);
+}
+
+.chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.chips a {
+    border: 1px solid var(--line);
+    background: #fff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.note {
+    background: var(--sand);
+    border-radius: var(--r);
+    padding: 16px 20px;
+    font-size: 15px;
+}
+
+@media (max-width: 900px) {
+    .side {
+        grid-template-columns: 1fr;
+    }
+
+    .toc {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
